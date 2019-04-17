@@ -1,5 +1,49 @@
-div{
-  width: 50%;
-  height: 50%;
-  background-color: blue;
+body{
+  font-family: 'Roboto Slab', serif;
+  background-color: rgb(70, 70, 70);
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  width: 640px;
+  height: 500px;
+  background-color: rgb(143, 255, 222);
+  margin:auto;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+}
+
+.top{
+  background-color: rgb(65, 203, 204);
+  height: 4em;
+  width: 100%;
+  margin: auto;
+}
+
+.topelements{
+  background-color: rgb(251, 29, 147);
+  position: relative;
+  width: 640px;
+  height: 4em;
+  margin: auto;
+  text-align: center;
+}
+
+
+.ui{
+  float: left;
+  position: relative;
+  height: auto;
+  width: 40px;
+  margin: 12px;
+}
+
+
+.h1{
 }
