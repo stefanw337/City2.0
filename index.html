@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
   </head>
+
+
+
   <body>
-    <div class="top">
 
-      <div class="topelements">
-        <img src="pic\118756.png" alt="" class="ui">
+<!-- header -->
 
-        <div class="h1">
-            <h1>City 2.0</<h1>
+    <section id=header>
+    <div class="container">
+
+        <div class="row">
+
+            <h1 class="headertext">smart.city</<h1>
+
         </div>
 
 
@@ -21,9 +28,43 @@
 
     </div>
 
-    <div class="content">
+    </section>
+
+<!-- Content -->
+
+    <section id="content">
+    <div class="col-lg-12">
+      <div class="cont">
+
+      </div>
+
+      <svg onmouseover="sineMove()" id="ok" class="city" onclick="animate()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 321.33 308"><defs><style>.cls-1{fill:url(#Unbenannter_Verlauf_17);}.cls-2{fill:url(#Unbenannter_Verlauf_19);}.cls-3{fill:url(#Unbenannter_Verlauf_10);}.cls-4{fill:url(#Unbenannter_Verlauf_23);}</style><linearGradient id="Unbenannter_Verlauf_17" x1="242.41" y1="124.35" x2="59.41" y2="260.35" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9e580b"/><stop offset="1" stop-color="#562f07"/></linearGradient><linearGradient id="Unbenannter_Verlauf_19" x1="213.34" y1="85.5" x2="125.34" y2="223.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1dfc28"/><stop offset="1" stop-color="#1dbc20"/></linearGradient><linearGradient id="Unbenannter_Verlauf_10" x1="248.85" y1="33.8" x2="70.85" y2="195.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4affdc"/><stop offset="1" stop-color="#08a571"/></linearGradient><linearGradient id="Unbenannter_Verlauf_23" x1="203.21" y1="72.67" x2="236.71" y2="39.67" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ccc"/><stop offset="1" stop-color="#f2f2f2"/></linearGradient></defs><title>Element 1</title><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_2-2" data-name="Ebene 2"><path class="cls-1" d="M321.33,168.09c0,40.76-81.22,140.13-162,139.91C79.45,307.78,0,208.4,0,168.09,0,87,321.33,87,321.33,168.09Z"/><path class="cls-2" d="M321.33,168.09c0,81.06-321.33,81.06-321.33,0S321.33,87,321.33,168.09Z"/><path class="cls-3" d="M298,137.33c0,75.85-274.67,75.85-274.67,0a137.34,137.34,0,0,1,274.67,0Z"/><path class="cls-4" d="M173.57,17.46c-.11,8-.6,15.92-2.45,23.58a137.7,137.7,0,0,1,77.27,63.68,176.55,176.55,0,0,0,22.09-13.9A137.54,137.54,0,0,0,173.57,17.46Z"/></g></g></svg>
+
+
+      <div class="cont">
+        <img src="pic/city.png"></img>
+        <img src="pic/mull.png"></img>
+      </div>
+      <div class="obj">
+
+      </div>
 
     </div>
+  </section>
 
+  <script>
+
+      var banner = document.getElementById("ok");
+          start = 0;
+
+      function sineMove(){
+        banner.style.top =  (50 * Math.sin( start ) +80) -350 +  'px' ;
+        start += 0.05;
+
+      }
+      window.setInterval( sineMove, 50 );
+
+
+  </script>
   </body>
 </html>

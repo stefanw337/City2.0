@@ -1,0 +1,46 @@
+html,body{
+  font-family: 'Roboto Slab', serif;
+  background-color: rgb(70, 70, 70);
+  margin: auto;
+  font-size: 16px;
+  padding-top:0;
+}
+
+#header{
+  background-color: rgb(37, 195, 118);
+}
+
+#content{
+  padding: 0 10%;
+}
+
+.headertext{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  margin: auto;
+  position: relative;
+  margin-bottom: 0.25rem;
+}
+
+.city{
+  display: block;
+  width:35%;
+  position: relative;
+  top:0;
+  margin: auto;
+  top: 15%;
+  z-index: 1;
+}
+
+.cont{
+  background-color:rgb(48, 199, 228);
+  margin:auto;
+  padding: 0 0;
+  height: 400px;
+}
+
+img{
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+}
